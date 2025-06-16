@@ -22,9 +22,8 @@ Test task for **Middle (Strong Junior) JavaScript (TypeScript) Full-stack Develo
 
 ## Repo and GH-page
 
-- [https://github.com/KolyaKolyaKolyadnica/calendar-addax](Repo)
-
-- [https://kolyakolyakolyadnica.github.io/calendar-addax/](Live)
+- [Repo](https://github.com/KolyaKolyaKolyadnica/calendar-addax)
+- [Live](https://kolyakolyakolyadnica.github.io/calendar-addax/)
 
 ## Getting Started Locally
 
