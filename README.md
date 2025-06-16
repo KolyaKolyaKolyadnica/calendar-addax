@@ -6,10 +6,10 @@ Test task for **Middle (Strong Junior) JavaScript (TypeScript) Full-stack Develo
 
 - [x] Create and edit tasks inside calendar cells (days) in an inline manner.
 - [x] Reassign tasks between days (calendar cells) using drag and drop.
-- [x] Reorder tasks within the same day using drag and drop.
+- [x] Reorder task in one cell using drag and drop.
 - [x] Filter tasks in the calendar by searching text.
-- [x] Show worldwide holidays for each day using [Nager.Date API](https://date.nager.at/).
-- [x] Holiday name is fixed at the top of the cell and does not participate in task drag-and-drop.
+- [x] Show worldwide holidays for each day in the calendar.
+- [x] Holiday name must be fixed at of the cell and must not participate in re-ordering.
 
 ## 🛠️ Technologies Used
 
