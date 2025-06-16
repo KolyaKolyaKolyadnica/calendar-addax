@@ -36,20 +36,7 @@ export const useTasksStore = create<TasksState>((set, get) => ({
     [TOMORROW]: [
       { id: "3", title: "Save data (DB, localStorage, or something similar)" },
       { id: "4", title: "Change country setting" },
-      { id: "5", title: "Responsive design" },
-      { id: "6", title: "Dark/Light mode toggle" },
-      {
-        id: "7",
-        title: "Add more task options (title, description, priority, etc.)",
-      },
-      {
-        id: "8",
-        title: "Add Markdown support",
-      },
-      {
-        id: "9",
-        title: "Refactor code or add new libraries for better scaling",
-      },
+      { id: "5", title: "See more in the README..." },
     ],
   },
   editDay: "",
