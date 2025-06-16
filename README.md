@@ -1,8 +1,8 @@
-# 🗓️ Calendar Addax
+# Calendar Addax
 
 Test task for **Middle (Strong Junior) JavaScript (TypeScript) Full-stack Developer** position.
 
-## ✅ Required Functionality
+## Required Functionality
 
 - [x] Create and edit tasks inside calendar cells (days) in an inline manner.
 - [x] Reassign tasks between days (calendar cells) using drag and drop.
@@ -11,7 +11,7 @@ Test task for **Middle (Strong Junior) JavaScript (TypeScript) Full-stack Develo
 - [x] Show worldwide holidays for each day in the calendar.
 - [x] Holiday name must be fixed at of the cell and must not participate in re-ordering.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **TypeScript**
 - **React + React Hooks**
