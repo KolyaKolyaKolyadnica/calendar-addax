@@ -15,8 +15,7 @@ const CalendarGrid = styled.div`
   grid-template-columns: repeat(7, 1fr);
   gap: 1rem;
   background: #ccc;
-  width: 100%;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem 0.5rem;
 `;
 const DayName = styled.div`
   color: black;

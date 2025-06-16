@@ -20,7 +20,7 @@ const Button = styled.button<{ isVisible: boolean }>`
   padding: 1rem;
 
   &:hover {
-    background: var(--color-bg-red-400);
+    background: var(--color-red-400);
   }
 `;
 

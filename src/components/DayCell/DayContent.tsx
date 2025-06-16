@@ -9,7 +9,7 @@ import { ItemTypes, type Task } from "../../types/tasks";
 const Content = styled.div<{ isCurrentMonth: boolean; isOver: boolean }>`
   background: ${({ isCurrentMonth, isOver }) => {
     if (isOver) {
-      return "var(--color-bg-gray-400)";
+      return "var(--color-gray-400)";
     }
 
     return isCurrentMonth ? "white" : "";

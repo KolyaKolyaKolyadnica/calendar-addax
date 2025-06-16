@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# 🗓️ Calendar Addax
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Test task for **Middle (Strong Junior) JavaScript (TypeScript) Full-stack Developer** position.
 
-Currently, two official plugins are available:
+## ✅ Required Functionality
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] Create and edit tasks inside calendar cells (days) in an inline manner.
+- [x] Reassign tasks between days (calendar cells) using drag and drop.
+- [x] Reorder tasks within the same day using drag and drop.
+- [x] Filter tasks in the calendar by searching text.
+- [x] Show worldwide holidays for each day using [Nager.Date API](https://date.nager.at/).
+- [x] Holiday name is fixed at the top of the cell and does not participate in task drag-and-drop.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **TypeScript**
+- **React + React Hooks**
+- **Zustand** — for state management (tasks)
+- **react-dnd** — for drag and drop functionality
+- **Emotion** — CSS-in-JS for styling
+- **Vite** — build tool
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Repo and GH-page
+
+- [https://github.com/KolyaKolyaKolyadnica/calendar-addax](Repo)
+
+- [https://kolyakolyakolyadnica.github.io/calendar-addax/](Live)
+
+## Getting Started Locally
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Additional Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+I listed some next steps that were not included in the **Required Functionality**, but are necessary or at least desirable from my perspective
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Save data (DB, localStorage or similar)
+- Change country
+- Responsive design
+- Dark/Light mode
+- Add more task fields (title, description, priority, etc.)
+- Refactor / scale with new libs if necessary

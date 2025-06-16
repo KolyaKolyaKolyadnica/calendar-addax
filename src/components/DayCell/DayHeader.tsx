@@ -26,7 +26,7 @@ const TasksCounter = styled.div<{ isHoliday: boolean }>`
   font-size: 0.75rem;
   padding-bottom: 0.125rem;
   color: ${({ isHoliday }) => {
-    return isHoliday ? "var(--color-bg-gray-200)" : "var(--color-bg-gray-500)";
+    return isHoliday ? "var(--color-gray-200)" : "var(--color-gray-500)";
   }};
 `;
 const HolidayContainer = styled.div`

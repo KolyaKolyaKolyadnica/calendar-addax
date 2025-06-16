@@ -14,21 +14,42 @@ interface TasksState {
   setSearchBy: (value: string) => void;
 }
 
+/**
+ * These constants are only for example purposes
+ * and to provide sample task descriptions in the calendar.
+ */
+const TODAY = new Date().toLocaleDateString("en-CA");
+const tomorrowDate = new Date();
+tomorrowDate.setDate(tomorrowDate.getDate() + 1);
+const TOMORROW = tomorrowDate.toLocaleDateString("en-CA");
+
 export const useTasksStore = create<TasksState>((set, get) => ({
   tasks: {
-    "2025-06-05": [{ id: "1", title: "wwwwwwwwww" }],
-    "2025-06-04": [
+    [TODAY]: [
+      { id: "1", title: "Hi! This is my test task." },
       {
         id: "2",
         title:
-          "fasdffsdaffsdfas da sad fdsa fsa fasdf asdf f safdw fsadf sda fdsafasdfasfsafdf fasdfasdfawww",
+          "These are hardcoded tasks just as an example. I added some next steps that weren’t mentioned in the Required Functionality, but I think they are required or at least will be nice to have.",
       },
     ],
-    "2025-06-03": [{ id: "3", title: "test" }],
-    "2025-06-02": [{ id: "4", title: "test" }],
-    "2025-06-06": [
-      { id: "5", title: "test #1" },
-      { id: "6", title: "test #2" },
+    [TOMORROW]: [
+      { id: "3", title: "Save data (DB, localStorage, or something similar)" },
+      { id: "4", title: "Change country setting" },
+      { id: "5", title: "Responsive design" },
+      { id: "6", title: "Dark/Light mode toggle" },
+      {
+        id: "7",
+        title: "Add more task options (title, description, priority, etc.)",
+      },
+      {
+        id: "8",
+        title: "Add Markdown support",
+      },
+      {
+        id: "9",
+        title: "Refactor code or add new libraries for better scaling",
+      },
     ],
   },
   editDay: "",

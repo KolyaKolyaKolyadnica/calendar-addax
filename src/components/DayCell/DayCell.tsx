@@ -5,6 +5,7 @@ import { DayHeader } from "./DayHeader";
 import { DayContent } from "./DayContent";
 
 const Container = styled.div<{
+  isToday: boolean;
   isCurrentMonth: boolean;
   isHoliday: boolean;
 }>`
@@ -20,6 +21,9 @@ const Container = styled.div<{
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
+  outline: ${({ isToday }) => {
+    return isToday ? "4px solid var(--color-gray-600)" : "";
+  }};
 `;
 
 type DayCellProps = {
@@ -33,8 +37,16 @@ export const DayCell = ({ day }: DayCellProps) => {
   const tasks = tasksStore.getTasks();
   const currentTasks = tasks[keyDate];
 
+  const now = new Date();
+  const isToday =
+    now.toLocaleDateString("en-CA") === day.date.toLocaleDateString("en-CA");
+
   return (
-    <Container isCurrentMonth={day.isCurrentMonth} isHoliday={!!day.holiday}>
+    <Container
+      isToday={isToday}
+      isCurrentMonth={day.isCurrentMonth}
+      isHoliday={!!day.holiday}
+    >
       <DayHeader day={day} taskCounter={currentTasks?.length} />
       <DayContent day={day} />
     </Container>

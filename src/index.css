@@ -12,16 +12,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-bg-gray-600: rgb(54, 54, 54);
-  --color-bg-gray-500: rgb(85, 85, 85);
-  --color-bg-gray-400: rgb(152, 152, 152);
-  --color-bg-gray-300: rgb(176, 176, 176);
-  --color-bg-gray-200: rgb(192, 192, 192);
+  --color-gray-600: rgb(54, 54, 54);
+  --color-gray-500: rgb(85, 85, 85);
+  --color-gray-400: rgb(152, 152, 152);
+  --color-gray-300: rgb(176, 176, 176);
+  --color-gray-200: rgb(192, 192, 192);
 
-  --color-bg-red-400: rgba(255, 0, 0, 0.36);
-  --color-bg-red-300: rgba(128, 7, 7, 1);
-  --color-bg-red-200: rgba(144, 3, 3);
-  --color-bg-red-100: rgba(217, 13, 13);
+  --color-red-400: rgba(255, 0, 0, 0.36);
+  --color-red-300: rgba(128, 7, 7, 1);
+  --color-red-200: rgba(144, 3, 3);
+  --color-red-100: rgba(217, 13, 13);
 }
 
 body {

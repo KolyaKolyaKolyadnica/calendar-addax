@@ -7,7 +7,7 @@ import { useDrag, useDrop } from "react-dnd";
 const Container = styled.div<{ isDragging: boolean }>`
   position: relative;
   gap: 1rem;
-  background: var(--color-bg-gray-200);
+  background: var(--color-gray-200);
   padding: 0.5rem;
   margin: 0.125rem;
   border-radius: 0.5rem;
@@ -15,7 +15,7 @@ const Container = styled.div<{ isDragging: boolean }>`
   transition: all 0.3s;
 
   &:hover {
-    background: var(--color-bg-gray-300);
+    background: var(--color-gray-300);
   }
 `;
 const Content = styled.div`
@@ -35,8 +35,8 @@ const RemoveButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: var(--color-bg-red-400);
-    border-color: var(--color-bg-red-300);
+    background-color: var(--color-red-400);
+    border-color: var(--color-red-300);
   }
 `;
 
@@ -73,12 +73,12 @@ const CancelButton = styled.button`
   font-size: 0.75rem;
   background-color: transparent;
   cursor: pointer;
-  color: var(--color-bg-red-100);
+  color: var(--color-red-100);
 
   &:hover {
-    color: var(--color-bg-red-200);
-    background-color: var(--color-bg-red-400);
-    border-color: var(--color-bg-red-300);
+    color: var(--color-red-200);
+    background-color: var(--color-red-400);
+    border-color: var(--color-red-300);
   }
 `;
 const SaveButton = styled.button`
